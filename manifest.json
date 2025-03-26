@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Screenshot Tool",
+    "version": "1.0",
+    "description": "Adds a screenshot button to YouTube videos.",
+    "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["https://www.youtube.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+  
