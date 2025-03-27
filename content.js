@@ -39,6 +39,7 @@ function addScreenshotButton() {
         cursor: pointer;
         padding: 0;
         margin-left: 8px; /* Space between time display and screenshot button */
+        margin-right: 8px; /* Space between time display and screenshot button */
         align-self: center; /* Center vertically in the flex container */
     `;
 
